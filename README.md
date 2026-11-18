@@ -2,15 +2,15 @@
 ##### Tested on Microsoft Windows 11 Professional (x64) Build 26300.9974 (26H2)
 #
 
-A lightweight Windows utility that keeps the Windows 11 desktop icon view set to **Small icons (ListView mode)**.
+A lightweight and stable utility that keeps the Windows 11 desktop icon view set to **ListView mode**.
 
-## Overview
+**Windows 11 Desktop ListView Enforcer** runs in the background and monitors the desktop ListView control. 
 
-Windows Explorer can occasionally change or recreate the desktop icon view, particularly after Explorer restarts or crashes.
-
-**Windows 11 Desktop ListView Enforcer** runs in the background and monitors the desktop ListView control. If the desktop icon view is no longer set to Small icons, the utility restores the required view automatically.
+When accessing icon views from desktop context menu it will always conform the sizing in the listview mode.
 
 The utility is designed to remain active during normal Windows use and recover when Windows Explorer restarts.
+
+You will not see a change or revert of the desktop icon view size, particularly after Explorer restarts or crashes. This will not ever happen.
 
 ## Features
 
