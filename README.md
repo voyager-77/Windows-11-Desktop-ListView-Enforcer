@@ -25,8 +25,6 @@ You will not see a change or revert of the desktop icon view size, particularly 
 
 - **Explorer restart detection**  
   Monitors the Windows Explorer process ID to detect when Explorer has restarted, rather than relying solely on whether the desktop window exists.
-
-- **Automatic desktop rediscovery**  
   When Explorer restarts, the utility invalidates its previous desktop window reference and searches for the newly created desktop ListView control.
 
 - **Window handle validation**  
@@ -35,14 +33,11 @@ You will not see a change or revert of the desktop icon view size, particularly 
 - **Automatic recovery after an Explorer crash**  
   If Explorer crashes or is forcibly terminated and subsequently restarted, the utility continues monitoring, waits for the desktop interface to become available, rediscovers the ListView control and resumes enforcing Small icons mode.
 
-- **Minimal intervention**  
-  The utility only changes the desktop ListView style when it detects that the current view is not Small icons. It does not repeatedly force the same setting unnecessarily.
-
 - **Controlled redraw**  
   Temporarily suppresses redraw while applying a required style change, then refreshes the desktop ListView.
 
 - **Single-instance protection**  
-  Uses a named global Windows mutex to prevent multiple instances of the utility from running simultaneously.
+  Uses a global Windows mutex to prevent multiple instances of the utility from running simultaneously.
 
 ## Installation
 
@@ -95,10 +90,9 @@ The utility does not need to be manually restarted after an Explorer restart.
 
 ## Important Notes
 
-- This utility is intended for Windows 11 on 64-bit systems.
+- This utility has only been tested as working on Windows 11 64-bit OS.
 - It must run within your logged-in Windows desktop session to interact with the desktop ListView.
-- Task Scheduler is recommended for automatic startup.
-- The utility is not a replacement for Windows Explorer.
+- Task Scheduler is recommended for automatic startup. Although it can be run manually for testing.
 - Single-instance protection prevents accidental duplicate instances.
 
 ## Project
