@@ -1,8 +1,7 @@
 # Windows 11 Desktop ListView Enforcer 
 ##### Tested on Microsoft Windows 11 Professional (x64) Build 26300.9974 (26H2)
+##### A lightweight, unobtrusive and rock-solid utility that keeps the Windows 11 desktop icon view set to **ListView mode**.
 #
-
-A lightweight and stable utility that keeps the Windows 11 desktop icon view set to **ListView mode**.
 
 **Windows 11 Desktop ListView Enforcer** runs in the background and monitors the desktop ListView control. 
 
@@ -15,7 +14,7 @@ You will not see a change or revert of the desktop icon view size, particularly 
 ## Features
 
 - **Automatic enforcement / Continuous background monitoring**  
-  Monitors the Windows desktop ListView control and ensures it enforces it.
+  Monitors the Windows desktop ListView control and ensures that it is enforced.
 
 - **Ctrl + Mouse Wheel correction**  
   The desktop icon sizes may be changed by holding Ctrl and scrolling the mouse wheel, which can make the listview icons larger if needed and also revert back the other way to restore the listview/small icons mode.
