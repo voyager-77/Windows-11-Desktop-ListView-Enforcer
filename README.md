@@ -14,11 +14,8 @@ You will not see a change or revert of the desktop icon view size, particularly 
 
 ## Features
 
-- **Automatic Small icons enforcement**  
-  Monitors the Windows desktop ListView control and ensures it uses Small icons mode.
-
-- **Continuous background monitoring**  
-  Monitors the desktop and automatically corrects changes to the icon view.
+- **Automatic enforcement / Continuous background monitoring**  
+  Monitors the Windows desktop ListView control and ensures it enforces it.
 
 - **Ctrl + Mouse Wheel correction**  
   The desktop icon sizes may be changed by holding Ctrl and scrolling the mouse wheel, which can make the listview icons larger if needed and also revert back the other way to restore the listview/small icons mode.
