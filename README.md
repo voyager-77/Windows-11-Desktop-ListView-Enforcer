@@ -1,4 +1,6 @@
-# Windows 11 Desktop ListView Enforcer
+# Windows 11 Desktop ListView Enforcer 
+##### Tested on Microsoft Windows 11 Professional (x64) Build 26300.9974 (26H2)
+#
 
 A lightweight Windows utility that keeps the Windows 11 desktop icon view set to **Small icons (ListView mode)**.
 
