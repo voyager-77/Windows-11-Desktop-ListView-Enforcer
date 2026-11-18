@@ -16,7 +16,10 @@ The utility is designed to remain active during normal Windows use and recover w
   Monitors the Windows desktop ListView control and ensures it uses Small icons mode.
 
 - **Continuous background monitoring**  
-  Checks the desktop approximately every 500 milliseconds.
+  Monitors the desktop and automatically corrects changes to the icon view.
+
+- **Ctrl + Mouse Wheel correction**  
+  The desktop icon sizes may be changed by holding Ctrl and scrolling the mouse wheel, which can make the listview icons larger if needed and also revert back the other way to restore the listview/small icons mode.
 
 - **Explorer restart detection**  
   Monitors the Windows Explorer process ID to detect when Explorer has restarted, rather than relying solely on whether the desktop window exists.
@@ -28,7 +31,7 @@ The utility is designed to remain active during normal Windows use and recover w
   Checks whether its cached ListView window handle is still valid. If the handle is no longer valid, it attempts to locate the current desktop ListView again.
 
 - **Automatic recovery after an Explorer crash**  
-  If Explorer crashes or is forcibly terminated and subsequently restarted, the utility continues polling, waits for the desktop interface to become available, rediscovers the ListView control and resumes enforcing Small icons mode.
+  If Explorer crashes or is forcibly terminated and subsequently restarted, the utility continues monitoring, waits for the desktop interface to become available, rediscovers the ListView control and resumes enforcing Small icons mode.
 
 - **Minimal intervention**  
   The utility only changes the desktop ListView style when it detects that the current view is not Small icons. It does not repeatedly force the same setting unnecessarily.
@@ -78,7 +81,9 @@ The utility should now start automatically each time you sign in to Windows.
 
 Once running, the utility operates in the background.
 
-It periodically checks the desktop ListView control and only intervenes when the view needs correcting.
+It monitors the desktop ListView control and intervenes only when the view needs correcting.
+
+If you change the desktop icon size using Ctrl + Mouse Wheel, the utility detects the changed view and restores Small icons mode automatically.
 
 If Windows Explorer restarts, the utility detects the changed Explorer process, discards stale window references and searches for the recreated desktop ListView control. It retries discovery while the desktop interface is being rebuilt.
 
